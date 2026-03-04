@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: var(--co-white);
+}
+
+h1, h2, h3, h4, h5, h6, p , figure {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.line {
+    margin: 0;
+    border: none;
+    height: 8px;
+    width: 80px;
+    background-color: var(--co-blue);
+    z-index: 3;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 0;
+}

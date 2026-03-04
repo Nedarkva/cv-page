@@ -4,144 +4,91 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>My CV page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <title>Danila Shevnin | CV page</title>
   </head>
+
   <body>
-    <header class="header">
-      <img src="xxxx.png" alt="avatar" class="avatar" />
-      <h1 class="header__title">Dania Sh | CV page</h1>
-      <h2 class="header__subtitle">Frontend developer</h2>
+    <header class="header" aria-label="header">
+      <div class="container">
+        <address class="header__contacts">
+          <a href="mailto:nedarkva@mail.ru" class="header__contacts-link"
+            >nedarkva@mail.ru</a
+          >
+          <a href="tel:#" class="header__contacts-link"
+            >+xxxxxxxxxxx</a
+          >
+          <a
+            href="https://en.wikipedia.org/wiki/Kaliningrad"
+            class="header__contacts-link"
+            >Kaliningrad</a
+          >
+        </address>
+        <div class="header__wrapper">
+          <h1 class="header__hero">Danila Shevnin</h1>
+          <hr class="line">
+          <h2 class="header__desc" aria-label="hero description">
+            Juniour Front-End Developer
+          </h2>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="skills">
-        <h3>My skills</h3>
-        <details>
-          <summary>Skills list:</summary>
-          <ul>
-            <li>1. JavaScript</li>
-            <li>2. HTML</li>
-            <li>3. CSS</li>
-            <li>3. React</li>
-            <li>3. Typescript</li>
-          </ul>
-        </details>
-      </section>
-      <article class="article">
-        <h4>Short article about me:</h4>
-        <p class="article__content">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis iu re
-          temporibus doloremque, praesentium distinctio dolorem maxime dolor
-          sapiente, a tque ea esse, ab reprehenderit. Molestias vero laudantium
-          aliquid perspiciatis, r eprehenderit voluptatibus, rem exercitationem
-          dolorem quod veniam nam laboriosam est, porro qui deleniti quae in
-          placeat tempore sunt at minus earum voluptatum!
-        </p>
-      </article>
-      <section class="gallery">
-        <img
-          src="https://placehold.co/250x250"
-          alt="code_img"
-          class="galarry-img"
-        />
-        <img
-          src="https://placehold.co/250x250"
-          alt="code_img"
-          class="galarry-img"
-        />
-        <img
-          src="https://placehold.co/250x250"
-          alt="code_img"
-          class="galarry-img"
-        />
-      </section>
-      <hr class="separator" />
-      <section class="videos">
-        <iframe
-          class="my-video"
-          src="https://www.youtube.com/embed/bxl_qi72tMU"
-          title="HTML для начинающих за 33 минуты"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </section>
-      <section class="hobbies">
-        <details>
-          <summary>Hobbies</summary>
-          <ol>
-            <li>Gaming</li>
-            <li>Video editing</li>
-            <li>Draw</li>
-          </ol>
-        </details>
-      </section>
-      <hr class="separator" />
-      <!-- <section class="education">
-        <table class="education__table">
-          <thead>
-            <tr>
-              <th>School / University</th>
-              <th>Profession</th>
-              <th>Year</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>IT shool 1</td>
-              <td>Angular Developer</td>
-              <td>2019</td>
-            </tr>
-            <tr>
-              <td>IT shool 2</td>
-              <td>React Developer</td>
-              <td>2020</td>
-            </tr>
-          </tbody>
-        </table>
-      </section> -->
-      <section class="quote">
-        <blockquote>Победителей не судят</blockquote>
-      </section>
-      <section class="interaction">
-        <form
-          action="https://ya.ru"
-          class="form"
-          method="get"
-          target="_blank"
-        >
-          <fieldset>
-            <legend>Ask me anything</legend>
-            <label for="firstNameID">First Name: </label>
-            <input type="text" id="firstNameID" name="fistName" />
-            <br /><br />
-            <label for="lastNameID">Last Name: </label>
-            <input type="text" id="lastNameID" name="lastName" />
-            <br /><br />
-            <label for="emailID">Email: </label>
-            <input type="email" id="emailID" name="email" />
-            <br /><br />
-            <label for="descID">Type something: </label>
-            <br />
-            <textarea
-              id="descID"
-              cols="30"
-              rows="10"
-              name="description"
-              placeholder="i am waiting for..."
-            ></textarea>
-            <br /><br />
-            <input type="submit" value="Submit form" />
-          </fieldset>
-        </form>
+      <section class="skills" aria-label="skills section">
+        <div class="container">
+          <h3 class="skills__title">Technical skills</h3>
+          <div class="skills__wrapper">
+            <div class="skills__content">
+              <ul class="skills__list" aria-label="technical skills list">
+                <li class="skills__list-item">
+                  <p class="skills__list-p">Programming Languages:</p>
+                </li>
+                <li class="skills__list-item">
+                  <p class="skills__list-p">Frameworks and Libraries:</p>
+                </li>
+                <li class="skills__list-item">
+                  <p class="skills__list-p">Web technologies and Frameworks:</p>
+                </li>
+                <li class="skills__list-item">
+                  <p class="skills__list-p">UI Design Technologies:</p>
+                </li>
+                <li class="skills__list-item">
+                  <p class="skills__list-p">Version Control Systems:</p>
+                </li>
+              </ul>
+            </div>
+            <div class="skills__content-desc">
+              <ul class="skills__list skills__list-start" aria-label="technical skills list">
+                <li class="skills__list-item">
+                  <p class="skills__list-p">JavaScript</p>
+                </li>
+                <li class="skills__list-item">
+                  <p class="skills__list-p">-</p>
+                </li>
+                <li class="skills__list-item">
+                  <p class="skills__list-p">
+                    Docker, Prettier, HTML, CSS, NPM, MongoDB, Postman
+                  </p>
+                </li>
+                <li class="skills__list-item">
+                  <p class="skills__list-p">Figma, Adobe Photoshop</p>
+                </li>
+                <li class="skills__list-item">
+                  <p class="skills__list-p">GitHub</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <br />
-    <footer>
-      <address class="address">
-        <a href="mailto:nedarkva@mail.ru">nedarkva@mail.ru</a>
-        <br /><br />
-        <a href="tel:+998941234567">+998941234567</a>
-      </address>
-    </footer>
   </body>
 </html>
+

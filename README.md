@@ -4,4 +4,3 @@
 
 [CV page repository](https://github.com/Nedarkva/cv-page)
 
-![image](xxxx.png)
